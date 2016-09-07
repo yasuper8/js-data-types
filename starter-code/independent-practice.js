@@ -11,21 +11,22 @@
  */
 
 // Your code here
-
+	var q1 = ["image1.png", "image2.png", "image3.png"];
+	console.log("Question 1 " + q1);
 /**
  * Question 2
  * Using the array from Question 1, store the first element of the array in variable q2.
  */
 
 // Your code here
-
+	var q2 = q1[0];
 /**
  * Question 3
  * Get the length of the first array (number of elements in the array) and store it in variable q3
  */
 
 // Your code here
-
+	var q3 = q1.length;
 /**
  * Question 4
  *  Using the array from Question 1, store the last element of the array in variable q4. Hint: How can we get the number of elements in the array?
@@ -33,7 +34,7 @@
 
 
 // Your code here
-
+	var q4 = q1[2];
 
 // ____________________________________________________________________________
 
@@ -48,8 +49,13 @@ The end result should be an array of numbers with values 2,3,4,5
  */
 
 // Your code here
+	var numbers = [1, 2, 3, 4];
+	var newNums = [];
+	for (var i = 0; i < numbers.length; i++){
+		newNums.push(numbers[i] + 1);
+	}
 
-
+	console.log(newNums);
 /**
  * Question 6
  * Using the array from Question 5, find the average of the numbers in the array (average=sum of all numbers/number of numbers). Store the average in q6.
@@ -57,3 +63,16 @@ The end result should be an array of numbers with values 2,3,4,5
 
 
 // Your code here
+	var q6;
+	var counter;
+	for (var i = 0; i < newNums.length; i++) {
+		counter += newNums[i];
+
+		q6 = counter/newNums.length;
+	}
+
+	console.log(q6);
+
+
+
+
