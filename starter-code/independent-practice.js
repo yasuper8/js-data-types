@@ -56,6 +56,10 @@ The end result should be an array of numbers with values 2,3,4,5
 	}
 
 	console.log(newNums);
+
+	numbers.forEach(function(i){
+
+	});
 /**
  * Question 6
  * Using the array from Question 5, find the average of the numbers in the array (average=sum of all numbers/number of numbers). Store the average in q6.
@@ -63,13 +67,13 @@ The end result should be an array of numbers with values 2,3,4,5
 
 
 // Your code here
+	var numbers = [1, 2, 3, 4];
 	var q6;
-	var counter;
-	for (var i = 0; i < newNums.length; i++) {
-		counter += newNums[i];
-
-		q6 = counter/newNums.length;
+	var counter = 0;
+	for (var i = 0; i < numbers.length; i++) {
+		counter += numbers[i];
 	}
+	q6 = counter/numbers.length;
 
 	console.log(q6);
 
